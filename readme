@@ -1,8 +1,24 @@
-// Pro potřebu Jest testů je "npm install --save-dev jest"
+# Poznámky z konfigurace a instalace pro testování
 
-// Protože používám moduly tak testy spouštím s konfigurací v package.json
-// "scripts": {
-//     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-//   }
+##Pro potřebu Jest testů jsem instaloval Jest a jest - fetch - mock pro testování fetch API. 
 
-// pro potřebu testování fetch instaluji npm install --save-dev jest-fetch-mock
+```
+npm install --save-dev jest
+```
+##Protože používám moduly tak testy spouštím s konfigurací v package.json,
+
+    ```
+"scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  }
+```
+
+##Pro potřebu testování fetch instaluji
+    ```
+npm install --save-dev jest-fetch-mock
+```
+
+## Build docker spustím pomocí
+   ```
+docker compose up --build
+   ```
