@@ -7,18 +7,18 @@ npm install --save-dev jest
 ```
 ##Protože používám moduly tak testy spouštím s konfigurací v package.json,
 
-    ```
+```
 "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   }
 ```
 
 ##Pro potřebu testování fetch instaluji
-    ```
+```
 npm install --save-dev jest-fetch-mock
 ```
 
 ## Build docker spustím pomocí
-   ```
+```
 docker compose up --build
-   ```
+```
