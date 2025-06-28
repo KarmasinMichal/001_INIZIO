@@ -1,11 +1,11 @@
 # Poznámky z konfigurace a instalace pro testování
 
-##Pro potřebu Jest testů jsem instaloval Jest a jest - fetch - mock pro testování fetch API. 
+### Pro potřebu Jest testů jsem instaloval Jest a jest - fetch - mock pro testování fetch API. 
 
 ```
 npm install --save-dev jest
 ```
-##Protože používám moduly tak testy spouštím s konfigurací v package.json,
+### Používám moduly, tak testy spouštím s konfigurací v package.json
 
 ```
 "scripts": {
@@ -13,12 +13,12 @@ npm install --save-dev jest
   }
 ```
 
-##Pro potřebu testování fetch instaluji
+### Pro potřebu testování fetch instaluji
 ```
 npm install --save-dev jest-fetch-mock
 ```
 
-## Build docker spustím pomocí
+### Build docker spustím pomocí
 ```
 docker compose up --build
 ```
