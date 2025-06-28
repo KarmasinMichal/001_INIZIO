@@ -60,10 +60,10 @@ h1 {
     background-color: #fff;
 }
 
-#saveToCsv {
+.saveToCsv {
     display: none;
-    margin: 20px auto;
     padding: 10px 20px;
+    float: right;
     font-size: medium;
     background-color: #4CAF50;
     color: white;

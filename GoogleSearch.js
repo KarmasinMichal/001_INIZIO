@@ -24,7 +24,11 @@ export default class GoogleSearch {
             this.appendResults(response);
         };
 
-        document.getElementById("saveToCsv").style.display = "block";
+        Array.from(document.getElementsByClassName("saveToCsv")).forEach(element => {
+
+            element.style.display = "block";
+
+        });
     }
 
     appendResults(response) {
@@ -86,7 +90,14 @@ export default class GoogleSearch {
     emptySearchResults() {
         document.getElementById("content").innerHTML = "";
         document.getElementById("stateOfResponse").innerHTML = "";
-        document.getElementById("saveToCsv").style.display = "none";
+
+        Array.from(document.getElementsByClassName("saveToCsv")).forEach(element => {
+
+            element.style.display = "none";
+
+        });
+
+
     }
 
 

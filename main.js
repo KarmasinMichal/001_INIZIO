@@ -23,9 +23,12 @@ document.getElementById("clearButton").addEventListener("click", () => {
     googleSearch.getResult();
 });
 
-saveToCsv.addEventListener("click", () => {
-    const csvExporter = new CsvExporter("#content .search-item");
-    csvExporter.saveToFile();
+//Array.from protože getElementsByClassName vrací HTMLCollection, která není pole a nemohu tedy přes ni použít forEach
+Array.from(document.getElementsByClassName("saveToCsv")).forEach(element => {
+    element.onclick = event => {
+        const csvExporter = new CsvExporter("#content .search-item");
+        csvExporter.saveToFile();
+    }
 });
 
 
